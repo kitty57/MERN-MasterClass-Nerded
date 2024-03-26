@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gym Registration application</h1>
+    <div class="container">
+        <div class="registration-app">
+            <h2><img src="./img1.gif" alt="To-Do List Icon" /></h2>
+            <div class="row">
+                <label for="input-box1" class="name">Enter Your Name: </label>
+                <input type="text" id="input-box1" placeholder="Add Your Text">
+            </div>
+            <div class="row">
+                <label for="input-box2" class="contact-info">Enter Your Mobile No: </label>
+                <input type="text" id="input-box2" placeholder="Add Your Mobile number" maxlength="10">
+            </div>
+            <div class="row">
+                <label for="input-box3" class="Membership-details">Select Membership:</label>
+                <select id="input-box3">
+                    <option value="Basic">Basic</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <div class="row">
+                <button onclick="addDetails()">Submit Details</button>
+            </div>
+            
+        </div>
+        <div class="details">
+            <ul id="div-container">   
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

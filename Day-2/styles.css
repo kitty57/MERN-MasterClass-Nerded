@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+body{
+    background-color: rgba(212, 212, 200, 0.664);
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+body {
+    background: #272626ee;
+    margin: 0;
+    padding: 0;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Membership-details select{
+    padding: 10px 20px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details button {
+    background-color: #dc3545;
+}
+
+.details button:hover {
+    background-color: #c82333;
+}
+
+.registration-details {
+    background: linear-gradient(18deg, rgba(171,171,171,1) 0%, rgba(181,194,189,1) 49%, rgba(255,255,255,0.87718837535014) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width:60%;
+}
+
+.registration-details p {
+    margin: 5px 0;
+}
+
+.registration-details button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+    width:30%;
+}
