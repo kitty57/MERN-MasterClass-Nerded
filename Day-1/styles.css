@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+body{
+    background-color:rgb(225, 230, 235);
+    font-family: "Tauri", sans-serif;
+}
+
+.main{
+display: flex;
+background-color:  rgb(225, 230, 235);
+border-color: black;
+border: px solid #b9b8b8;
+margin: 50px 50px;
+height: 550px;
+}
+
+span{
+    color:blue;
+}
+.left, .right {
+    width:50%;
+    padding:0px;
+  }
+.left{
+    background: radial-gradient(50% 50% at 50% 50%, #0b59c0 0%, #8ad34e 100%); 
+    border-top-left-radius: 10%;
+    border-bottom-left-radius:10% ;
+}
+
+.right{
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background: linear-gradient(45deg, rgba(143, 148, 219, 0.863), rgba(68, 180, 180, 0.603));
+    border-top-right-radius: 10%;
+    border-bottom-right-radius:10% ;
+
+}
+.left img{
+    width: 400px;
+    height: 500px;
+    margin: 40px 50px;
+}
+.uname,.pw{
+    margin-top:25px;
+}
+
+.form-ip input{
+    padding:0 20px;
+    margin:20px 95px;
+    width: 300px;
+    min-height: 40px;
+    border-radius: 8px;
+}
+.form-ip button{
+    padding:0 20px;
+    margin:10px 95px;
+    width: 340px;
+    min-height: 50px;
+    border-radius: 8px;
+    background: radial-gradient(50% 50% at 50% 50%, #65e41bd5 0%, #3cee05d0 100%);
+}
+
+.right h1,p{
+    text-align: center;
+}
+.fp{
+    text-align: end;
+}
