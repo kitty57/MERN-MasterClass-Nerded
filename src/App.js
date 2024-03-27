@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { getAllMemberships, updateMembership } from './membershipApi';
-import MembershipCard from './MembershipCard';
+import React, { useState } from 'react';
+import RecipeList from './RecipeList';
+import RecipeForm from './RecipeForm';
 
-function MembershipManagement() {
-  const [memberships, setMemberships] = useState([]);
-
-  useEffect(() => {
-    fetchMemberships();
-  }, []);
-
-  const fetchMemberships = async () => {
-    const membershipsData = await getAllMemberships();
-    setMemberships(membershipsData);
+const App = () => {
+  const [recipes, setRecipes] = useState([]);
+  const addRecipe = (newRecipe) => {
+    setRecipes([...recipes, { ...newRecipe, id: Date.now() }]);
   };
 
-  const handleMembershipUpdate = async (updatedMembership) => {
-    await updateMembership(updatedMembership);
-    fetchMemberships();
+  const deleteRecipe = (id) => {
+    setRecipes(recipes.filter(recipe => recipe.id !== id));
   };
 
   return (
-    <div>
-      <h2>Membership Management</h2>
-      {memberships.map((membership) => (
-        <MembershipCard
-          key={membership.id}
-          membership={membership}
-          onUpdate={handleMembershipUpdate}
-        />
-      ))}
+    <div style={{ maxWidth: '800px', margin: 'auto', padding: '20px' }}>
+      <h1>Recipe Management App</h1>
+      <RecipeForm onAdd={addRecipe} />
+      <RecipeList recipes={recipes} onDelete={deleteRecipe} />
     </div>
   );
-}
+};
 
-export default MembershipManagement;
+export default App;
